@@ -1,0 +1,28 @@
+name: Feature request
+description: Propose an enhancement to schema, generator, verifier, loader, or dashboard.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe expected behavior and API/CLI surface.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: continuity_impact
+    attributes:
+      label: Continuity impact
+      description: Explain the expected effect on handoff validity and resume safety.
