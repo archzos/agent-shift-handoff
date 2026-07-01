@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "continuity_threshold": 0.7,
+  "compaction_threshold": 0.6,
+  "state_db": "state/sessions.sqlite",
+  "bedrock": {
+    "model": "anthropic.claude-sonnet-4-6",
+    "region": "ap-south-1"
+  },
+  "resume_checks": [
+    "verify artifact checksums",
+    "load the latest handoff document",
+    "execute the first resume instruction"
+  ]
+}

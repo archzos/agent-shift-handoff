@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-shift-handoff"
+version = "0.1.0"
+description = "Structured session handoff generator, verifier, and resume loader for long-running agents."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "ArchzOS" }]
+dependencies = [
+  "jsonschema>=4.23,<5",
+  "streamlit>=1.36,<2",
+  "plotly>=5.20,<6",
+  "requests>=2.32,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+]
+
+[project.scripts]
+agent-shift-handoff = "agent_shift_handoff.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agent_shift_handoff*"]
