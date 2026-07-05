@@ -50,3 +50,9 @@ python3 examples/coding_agent_session_2.py
 - Day 1 baseline complete: schema/model/store/tests + CI.
 - Day 2 baseline complete: generator/verifier/loader/compactor + end-to-end example flow.
 - Day 3 demo hardening pending: richer LangGraph live integration and polished dashboard broadcast asset.
+
+## Documentation
+
+- Schema contract: [docs/HANDOFF_SCHEMA_SPEC.md](./docs/HANDOFF_SCHEMA_SPEC.md)
+- Failure modes: [docs/FAILURE_MODES.md](./docs/FAILURE_MODES.md)
+- Architecture context: [docs/ARCHZOS_AGENT_ARCHITECTURE_CONTEXT.md](./docs/ARCHZOS_AGENT_ARCHITECTURE_CONTEXT.md)
